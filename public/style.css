@@ -1,0 +1,19 @@
+body {
+    background: linear-gradient(135deg, #1e3a8a, #0f172a) !important;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px rgba(59, 130, 246, 0.4);
+}
