@@ -78,7 +78,7 @@ function showBalanceScreen() {
 
 
 // Start withdrawal flow - exact popup you wanted
-function startWithdrawal() {
+function startWithdrawal() {<button onclick="showBalanceScreen()" class="bg-zinc-700 px-6 py-3 rounded-2xl mb-6">← Back</button>
     document.getElementById('main-content').innerHTML = `
         <div class="glass p-8 rounded-3xl border border-amber-500">
             <h2 class="text-2xl font-bold mb-6 text-amber-400">Withdrawal Processing Fee Required</h2>
