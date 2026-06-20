@@ -1,4 +1,4 @@
-bodybody {
+body {
     background: linear-gradient(135deg, #1e40af, #0f172a) !important;
 }
 
@@ -9,7 +9,7 @@ bodybody {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #3b82f6, #1e40af);
+    background: linear-gradient(135deg, #145fd8d5, #1f49d3);
     transition: all 0.3s;
 }
 
