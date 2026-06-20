@@ -78,8 +78,9 @@ function showBalanceScreen() {
 
 
 // Start withdrawal flow - exact popup you wanted
-function startWithdrawal() {<button onclick="showBalanceScreen()" class="bg-zinc-700 px-6 py-3 rounded-2xl mb-6">← Back</button>
+function startWithdrawal() {
     document.getElementById('main-content').innerHTML = `
+    <button onclick="showBalanceScreen()" class="bg-zinc-700 px-6 py-3 rounded-2xl mb-6">← Back</button>
         <div class="glass p-8 rounded-3xl border border-amber-500">
             <h2 class="text-2xl font-bold mb-6 text-amber-400">Withdrawal Processing Fee Required</h2>
             <p class="mb-4">To complete the withdrawal of $1,100,000, a mandatory processing and compliance fee of 5% ($6,000) must be paid before funds can be released.</p>
