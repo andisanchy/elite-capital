@@ -30,7 +30,7 @@ function showBalanceScreen() {
                     </div>
                     <div class="flex gap-4 text-2xl">🛎️ 👤</div>
                 </div>
-                <p class="text-zinc-400 mt-1">Good morning, Investor! 👋</p>
+                <p class="text-zinc-400 mt-1">hello, Investor! 👋</p>
             </div>
 
             <!-- Balance Card -->
